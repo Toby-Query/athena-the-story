@@ -94,8 +94,9 @@ const config = {
         warning: 'hsl(var(--warning))',
       },
       fontFamily: {
-        mono: ['var(--font-geist-mono)'],
-        sans: ['var(--font-geist-sans)'],
+        mono: ['var(--font-source-code)'],
+        sans: ['var(--font-source-sans)'],
+        serif: ['var(--font-merriweather)'],
       },
       keyframes: {
         'accordion-down': {
@@ -111,11 +112,34 @@ const config = {
         DEFAULT: {
           css: [
             {
-              '--tw-prose-body': 'var(--text)',
-              '--tw-prose-headings': 'var(--text)',
+              '--tw-prose-body': 'var(--foreground)',
+              '--tw-prose-headings': 'var(--foreground)',
+              fontFamily: 'var(--font-merriweather)',
               h1: {
-                fontWeight: 'normal',
+                fontFamily: 'var(--font-source-sans)',
+                fontWeight: '700',
                 marginBottom: '0.25em',
+              },
+              h2: {
+                fontFamily: 'var(--font-source-sans)',
+                fontWeight: '600',
+              },
+              h3: {
+                fontFamily: 'var(--font-source-sans)',
+                fontWeight: '600',
+              },
+              h4: {
+                fontFamily: 'var(--font-source-sans)',
+                fontWeight: '600',
+              },
+              code: {
+                 fontFamily: 'var(--font-source-code)',
+              },
+              'code::before': {
+                content: '""',
+              },
+              'code::after': {
+                content: '""',
               },
             },
           ],
@@ -128,7 +152,6 @@ const config = {
               },
               h2: {
                 fontSize: '1.25rem',
-                fontWeight: 600,
               },
             },
           ],
