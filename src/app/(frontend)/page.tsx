@@ -12,16 +12,13 @@ export default function Page() {
             <span className="text-4xl md:text-6xl font-light italic text-muted-foreground block mt-2">The Story</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground font-serif italic">
-            Robert Nystrom/User
+            Muthuphei Mukhunyeledzi
           </p>
         </div>
 
         <div className="h-px w-24 bg-border mx-auto" />
 
         <div className="space-y-6">
-          <p className="text-foreground/80 font-serif leading-relaxed text-lg max-w-lg mx-auto">
-            A handbook for writing interpreters. A guide to the dark arts of language implementation. A love letter to code.
-          </p>
 
           <div className="pt-8">
             <Link
