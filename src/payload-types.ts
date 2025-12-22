@@ -227,6 +227,7 @@ export interface Page {
  */
 export interface Post {
   id: number;
+  chapter: number;
   title: string;
   heroImage?: (number | null) | Media;
   content: {
@@ -1208,6 +1209,7 @@ export interface FormBlockSelect<T extends boolean = true> {
  * via the `definition` "posts_select".
  */
 export interface PostsSelect<T extends boolean = true> {
+  chapter?: T;
   title?: T;
   heroImage?: T;
   content?: T;

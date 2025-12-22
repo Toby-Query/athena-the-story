@@ -12,7 +12,9 @@ export default async function PostsLayout({ children }: { children: React.ReactN
     limit: 1000,
     overrideAccess: false,
     pagination: false,
+    sort: 'chapter',
     select: {
+      chapter: true,
       title: true,
       slug: true,
     },

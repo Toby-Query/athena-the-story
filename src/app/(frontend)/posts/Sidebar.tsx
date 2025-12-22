@@ -42,7 +42,7 @@ const MenuIcon = ({ className }: { className?: string }) => (
   </svg>
 )
 
-export function PostsSidebar({ posts }: { posts: Pick<Post, 'title' | 'slug'>[] }) {
+export function PostsSidebar({ posts }: { posts: Pick<Post, 'title' | 'slug' | 'chapter'>[] }) {
   const [isOpen, setIsOpen] = useState(false)
   const pathname = usePathname()
 
@@ -93,7 +93,7 @@ export function PostsSidebar({ posts }: { posts: Pick<Post, 'title' | 'slug'>[] 
                      "block text-xs font-mono uppercase tracking-wider mb-1 opacity-70",
                      isActive ? "text-primary" : "text-muted-foreground"
                    )}>
-                      Chapter {index + 1}
+                      Chapter {post.chapter}
                     </span>
                     <span className="block text-sm font-medium">
                       {post.title}
