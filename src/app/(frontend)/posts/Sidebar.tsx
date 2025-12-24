@@ -93,7 +93,7 @@ export function PostsSidebar({ posts }: { posts: Pick<Post, 'title' | 'slug' | '
                      "block text-xs font-mono uppercase tracking-wider mb-1 opacity-70",
                      isActive ? "text-primary" : "text-muted-foreground"
                    )}>
-                      Chapter {post.chapter}
+                      Tale {post.chapter}
                     </span>
                     <span className="block text-sm font-medium">
                       {post.title}

@@ -7,7 +7,6 @@ import React from 'react'
 import { Providers } from '@/providers'
 import { InitTheme } from '@/providers/Theme/InitTheme'
 import { mergeOpenGraph } from '@/utilities/mergeOpenGraph'
-import { draftMode } from 'next/headers'
 
 const merriweather = Merriweather({
   subsets: ['latin'],
@@ -41,7 +40,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <link href="/favicon.ico" rel="icon" sizes="32x32" />
         <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
       </head>
-      <body>
+      <body className='h-full w-full flex justify-center'>
         <Providers>
           {children}
         </Providers>

@@ -5,11 +5,10 @@ import { Metadata } from 'next'
 export default function Page() {
   return (
     <div className="min-h-[calc(100vh-var(--header-height)-100px)] flex flex-col items-center justify-center text-center p-8 bg-background">
-      <div className="max-w-2xl space-y-12">
+      <div className="max-w-3xl space-y-12">
         <div className="space-y-4">
           <h1 className="text-6xl md:text-8xl font-serif font-bold tracking-tight text-foreground">
-            Athena <br/>
-            <span className="text-4xl md:text-6xl font-light italic text-muted-foreground block mt-2">The Story</span>
+            Tales for Lethu
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground font-serif italic">
             Muthuphei Mukhunyeledzi
@@ -36,7 +35,7 @@ export default function Page() {
 
 export function generateMetadata(): Metadata {
   return {
-    title: 'Athena - The Story',
-    description: 'A handbook for writing interpreters.',
+    title: 'Tales for Lethu',
+    description: 'A collection of letters from traveler T, to his dear Lethu',
   }
 }
