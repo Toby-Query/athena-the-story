@@ -36,6 +36,6 @@ export default function Page() {
 export function generateMetadata(): Metadata {
   return {
     title: 'Tales for Lethu',
-    description: 'A collection of letters from traveler T, to his dear Lethu',
+    description: 'A collection of letters from traveler T, to his dear Lethu. Story by Muthuphei Mukhunyeledzi',
   }
 }
