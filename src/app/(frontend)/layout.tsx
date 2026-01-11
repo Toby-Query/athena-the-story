@@ -38,6 +38,17 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <InitTheme />
         <link href="/favicon.ico" rel="icon" sizes="48x48" />
         <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'WebSite',
+              name: 'Tales for Lethu',
+              url: getServerSideURL(),
+            }),
+          }}
+        />
       </head>
       <body className="h-full w-full flex justify-center">
         <Providers>{children}</Providers>
@@ -51,6 +62,6 @@ export const metadata: Metadata = {
   openGraph: mergeOpenGraph(),
   twitter: {
     card: 'summary_large_image',
-    creator: '@payloadcms',
+    creator: '@thups',
   },
 }
