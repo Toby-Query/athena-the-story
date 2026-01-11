@@ -28,7 +28,6 @@ import './globals.css'
 import { getServerSideURL } from '@/utilities/getURL'
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-
   return (
     <html
       className={cn(merriweather.variable, sourceSans.variable, sourceCode.variable)}
@@ -37,13 +36,11 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     >
       <head>
         <InitTheme />
-        <link href="/favicon.ico" rel="icon" sizes="32x32" />
+        <link href="/favicon.ico" rel="icon" sizes="48x48" />
         <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
       </head>
-      <body className='h-full w-full flex justify-center'>
-        <Providers>
-          {children}
-        </Providers>
+      <body className="h-full w-full flex justify-center">
+        <Providers>{children}</Providers>
       </body>
     </html>
   )
